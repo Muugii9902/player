@@ -6,18 +6,21 @@
 .container {
   width: vw;
   height: 1000px;
-  background-color: aquamarine;
+  background-image: url("https://unread.today/files/43/272e0cc2b897e840d9319047501090eb.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  
 .box {
   width: 600px;
   height: 80px;
   background-color: whitesmoke;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 .box2 {
   width: 800px;
@@ -25,18 +28,41 @@
   background-color: white;
   border-radius: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: end; */
 }
 .box3 {
   width: 600px;
   height: 80px;
-  border: 2px solid black;
+
   display: flex;
   gap: 20px;
 
   justify-content: center;
+}
+.item {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-image: url("https://mgl.gogo.mn/newsn/images/ck/2017/01/11/scan0011-173329-420999494.jpeg");
+  background-size: cover;
+  animation: run 3s linear infinite;
+  animation-play-state: paused;
+}
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes run {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .play1 {
   display: flex;
@@ -57,4 +83,10 @@
 }
 .fa-forward {
   font-size: 50px;
+}
+.hide {
+  display: none !important;
+}
+.button {
+  border-radius: none;
 }

@@ -12,25 +12,25 @@
   </head>
   <body>
     <h1>Music player</h1>
+
+    <audio src="./songs/music-player_music_summer.mp3"></audio>
     <div class="container">
-      <div class="box"></div>
+      <div class="box">
+        <h2 id="songTitle">NAME</h2>
+      </div>
       <div class="box2">
+        <div class="item"></div>
+
         <div class="box3">
-          <button class="backwardbtn">
-            <i class="fa-solid fa-backward"></i>
+          <button><i class="fa-solid fa-backward"></i></button>
+          <button>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-pause hide"></i>
           </button>
-          <div class="play1">
-            <button class="playbtn">
-              <i class="fa-solid fa-play show"></i>
-            </button>
-            <button class="pausebtn">
-              <i class="fa-solid fa-pause hide"></i>
-            </button>
-          </div>
-          <button class="forwarbtn"><i class="fa-solid fa-forward"></i></button>
+          <button><i class="fa-solid fa-forward"></i></button>
         </div>
       </div>
     </div>
-    <audio src=""></audio>
+    <script src="player.js"></script>
   </body>
 </html>
